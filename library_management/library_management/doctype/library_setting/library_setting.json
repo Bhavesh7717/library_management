@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-25 13:50:31.090545",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_membership_type",
+  "allow_return_days",
+  "column_break_lcfi5",
+  "allow_books"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_membership_type",
+   "fieldtype": "Select",
+   "label": "Default Membership Type",
+   "options": "\nGold\nSilver\nBronze"
+  },
+  {
+   "fieldname": "allow_return_days",
+   "fieldtype": "Int",
+   "label": "Allow Return Days"
+  },
+  {
+   "fieldname": "column_break_lcfi5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allow_books",
+   "fieldtype": "Int",
+   "label": "Allow Books"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-25 13:50:31.090545",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
