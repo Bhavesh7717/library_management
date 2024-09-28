@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LBT-.##",
+ "creation": "2024-09-24 12:59:17.340543",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "library_member",
+  "library_book",
+  "book_qty",
+  "stock_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "library_book",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Book",
+   "options": "Library Book",
+   "search_index": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "label": "Library Member",
+   "options": "Library Member",
+   "search_index": 1
+  },
+  {
+   "fieldname": "book_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Book Qty",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "stock_balance",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Stock Balance",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-26 10:52:46.850073",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Stock Ledger",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

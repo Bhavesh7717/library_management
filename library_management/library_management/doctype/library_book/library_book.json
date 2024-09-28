@@ -14,13 +14,15 @@
   "column_break_yqoyb",
   "author",
   "no_of_copies",
-  "stock_balance"
+  "book_image"
  ],
  "fields": [
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
   },
   {
    "fieldname": "no_of_pages",
@@ -30,7 +32,10 @@
   {
    "fieldname": "price",
    "fieldtype": "Float",
-   "label": "Price"
+   "in_list_view": 1,
+   "label": "Price",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_yqoyb",
@@ -48,14 +53,14 @@
    "label": "No of Copies"
   },
   {
-   "fieldname": "stock_balance",
-   "fieldtype": "Int",
-   "label": "Stock Balance"
+   "fieldname": "book_image",
+   "fieldtype": "Attach Image",
+   "label": "Book Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-25 13:46:40.336725",
+ "modified": "2024-09-26 16:05:31.605277",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Book",
@@ -75,7 +80,9 @@
    "write": 1
   }
  ],
+ "search_fields": "title",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }

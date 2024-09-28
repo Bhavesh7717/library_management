@@ -13,7 +13,8 @@
   "date_of_birth",
   "column_break_femky",
   "middle_name",
-  "full_name"
+  "full_name",
+  "image"
  ],
  "fields": [
   {
@@ -43,12 +44,19 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-25 13:47:02.162255",
+ "modified": "2024-09-27 17:44:35.344343",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Book Author",
@@ -68,7 +76,9 @@
    "write": 1
   }
  ],
+ "search_fields": "full_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

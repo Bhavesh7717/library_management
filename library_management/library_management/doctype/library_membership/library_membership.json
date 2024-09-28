@@ -34,6 +34,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "member.member_name",
    "fieldname": "member_name",
    "fieldtype": "Data",
    "label": "Member Name"
@@ -66,7 +67,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-25 13:42:17.581808",
+ "modified": "2024-09-24 12:29:53.402386",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",
@@ -86,7 +87,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "member_name"
 }

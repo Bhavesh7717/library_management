@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-22 17:18:39.353473",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "column_break_yr5et",
+  "clear_party_items",
+  "section_break_tmoyz",
+  "party_items",
+  "section_break_nc6v4",
+  "create_library_member",
+  "library_member_items",
+  "library_membership_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party Type",
+   "options": "\nEmployee\nCustomer"
+  },
+  {
+   "fieldname": "party_items",
+   "fieldtype": "Table",
+   "label": "Party Items",
+   "options": "Party Items"
+  },
+  {
+   "fieldname": "library_member_items",
+   "fieldtype": "Table",
+   "label": "Library Member Items",
+   "options": "Library Member Items"
+  },
+  {
+   "fieldname": "library_membership_items",
+   "fieldtype": "Table",
+   "label": "Library Membership Items",
+   "options": "Library Membership Items"
+  },
+  {
+   "fieldname": "column_break_yr5et",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clear_party_items",
+   "fieldtype": "Button",
+   "label": "Clear Party Items"
+  },
+  {
+   "fieldname": "section_break_tmoyz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "create_library_member",
+   "fieldtype": "Button",
+   "label": "Create Library Member"
+  },
+  {
+   "fieldname": "section_break_nc6v4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-22 17:56:29.142877",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Bulk Library Transaction Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

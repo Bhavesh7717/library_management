@@ -34,12 +34,16 @@
   {
    "fieldname": "issue_date",
    "fieldtype": "Date",
-   "label": "Issue Date"
+   "in_list_view": 1,
+   "label": "Issue Date",
+   "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "default": "0",
    "fieldname": "is_return",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Is Return"
   },
   {
@@ -47,6 +51,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "member.member_name",
    "fieldname": "member_name",
    "fieldtype": "Data",
    "label": "Member Name"
@@ -54,12 +59,15 @@
   {
    "fieldname": "due_date",
    "fieldtype": "Date",
-   "label": "Due Date"
+   "label": "Due Date",
+   "read_only": 1
   },
   {
    "fieldname": "returned_on",
    "fieldtype": "Date",
-   "label": "Returned On"
+   "in_list_view": 1,
+   "label": "Returned On",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -74,7 +82,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-25 13:54:11.846620",
+ "modified": "2024-09-26 19:23:44.836894",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Book Issue",
