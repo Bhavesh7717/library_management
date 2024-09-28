@@ -30,7 +30,7 @@ refresh:function(frm){
 				// },
 				"doc":frm.doc,
 				callback(resp){
-					console.log(resp)
+					console.log(resp);
 				}
 			})
 		})
