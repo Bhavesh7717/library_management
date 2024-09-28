@@ -9,7 +9,7 @@ from frappe.query_builder import Order
 
 class LibraryBookIssue(Document):
 	def validate(self):
-		pass
+		frappe.msgprint('Hemangi!!!!!!!!!!!')
 
 	def on_submit(self):
 		now_stock=self.fetch_stock()
